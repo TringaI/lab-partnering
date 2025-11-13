@@ -3,13 +3,12 @@ import streamlit as st
 # Title of App
 st.title("Web Development Lab03")
 
-#test for github
-
-# Assignment Data
+# Assignment Data 
 # TODO: Fill out your team number, section, and team members
+
 st.header("CS 1301")
-st.subheader("Team XX, Web Development - Section X")
-st.subheader("Team Member 1, Team Member 2")
+st.subheader("Team 44, Web Development - Section C")
+st.subheader("Biana Akpokabayen, Tringa Ibrahimi")
 
 
 # Introduction
@@ -28,4 +27,5 @@ Welcome to our Streamlit Web Development Lab03 app! You can navigate between the
 4.
 
 """)
+
 
