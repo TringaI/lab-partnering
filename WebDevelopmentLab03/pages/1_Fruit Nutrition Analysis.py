@@ -23,8 +23,8 @@ with st.container():
     
     st.subheader(f"Nutritional values for fruits per serving (g)")
     with st.expander("Read description", expanded=False):
-        st.write("Select a fruit and adjust the serving size. The outputs show the nutritional values "
-                 "(Calories, Fat, Sugar, Carbohydrates, Protein) for the chosen serving size.")
+        st.write("Select a fruit and adjust the serving size. The outputs will show the nutritional values "
+                 "(Calories, Fat, Sugar, Carbohydrates, Protein) for your chosen fruit and serving size.")
     col1, col2 = st.columns(2)
     with col1:
         user_fruit = st.selectbox('Choose a fruit', sorted(fruit_names))
