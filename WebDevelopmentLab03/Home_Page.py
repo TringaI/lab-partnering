@@ -21,11 +21,12 @@ st.subheader("Biana Akpokabayen, Tringa Ibrahimi")
 st.write("""
 Welcome to our Streamlit Web Development Lab03 app! You can navigate between the pages using the sidebar to the left. The following pages are:
 
-1.
-2.
-3.
-4.
+-  **Fruits Nutrition Analysis** - In this page you can get the nutritional value of choosen fruits. You can also get information about fruit families. In addition, you cans see which fruit are better for you based on your health conditino (if applicable).
+- 
+-
+- 
 
 """)
 
 
+st.image('./Images/avocado.avif')
