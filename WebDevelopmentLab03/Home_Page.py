@@ -29,4 +29,4 @@ Welcome to our Streamlit Web Development Lab03 app! You can navigate between the
 """)
 
 
-st.image('./Images/avocado.avif')
+st.image('WebDevelopmentLab03/Images/avocado.avif')
