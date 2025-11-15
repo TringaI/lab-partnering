@@ -29,4 +29,4 @@ Welcome to our Streamlit Web Development Lab03 app! You can navigate between the
 """)
 
 
-st.image('https://github.com/TringaI/lab-partnering/blob/main/WebDevelopmentLab03/Images/avocado.avif')
+st.image('https://raw.githubusercontent.com/TringaI/lab-partnering/main/WebDevelopmentLab03/Images/avocado.avif')
