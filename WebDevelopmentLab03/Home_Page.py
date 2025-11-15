@@ -22,8 +22,8 @@ st.write("""
 Welcome to our Streamlit Web Development Lab03 app! You can navigate between the pages using the sidebar to the left. The following pages are:
 
 -  **Fruits Nutrition Analysis** - In this page you can get the nutritional value of choosen fruits. You can also get information about fruit families. In addition, you cans see which fruit are better for you based on your health conditino (if applicable).
-- 
--
+-  **Phase 3** - Description Here
+-  **Phase 4** - Description Here
 - 
 
 """)
