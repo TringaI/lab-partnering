@@ -2,6 +2,9 @@ import google.generativeai as genai
 import os
 import streamlit as st
 import requests as r
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 st.title("Fruit Recipe Generator")
 st.write("Choose 2 fruits and a style. We will generate a fun recipe for you!")
@@ -23,13 +26,15 @@ if st.button("**Reveal Your Recipe**"):
             else:
                st.error(f"Could not find a fruit with the name: {fruit}. Check the spelling or enter a different fruit.")
         
-    genai.configure(api_key="AIzaSyDwEXKHLchXS9S67hi6lTy9O0btpD4Qf4I")
+    genai.configure(api_key=os.getenv("GOOGLE_GEMINI_KEY"))
     model = genai.GenerativeModel("gemini-2.0-flash")
 
     fruit_names = ""
     if len(fruit_data) == 2 :
-        for fruit in fruit_data:
-         fruit_names += fruit['name'] + ' '
+        fruit_names = ", ".join([fruit['name'] for fruit in fruit_data])
+
+        # for fruit in fruit_data:
+        #  fruit_names += fruit['name'] + ' '
         prompt = f"""
             Create a {cuisine.lower()} style recipe using {fruit_names}.
             Include a fun recipe name, ingredients list, and short instructions.
