@@ -1,11 +1,13 @@
 import streamlit as st
 import requests as r
 import google.generativeai as genai
-from dotenv import load_dotenv
-import os
+# from dotenv import load_dotenv
+# import os
 
-load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_GEMINI_KEY"))
+# load_dotenv()
+key = st.secrets['key']
+
+genai.configure(api_key=key)
 model = genai.GenerativeModel("gemini-2.0-flash")
 
 st.title("Fruit Chatbot 🤖")
