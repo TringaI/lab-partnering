@@ -29,7 +29,7 @@ if user_input:
             response = r.get(f"https://www.fruityvice.com/api/fruit/{fruit_name}")
             if response.status_code == 200:
                 data = response.json()
-                fruit_data.append({"name": fruit_name, "nutritions": data["nutritions"]})
+                fruit_data.append({"name": fruit_name, "nutritions": data["nutritions"], "family": data["family"]})
 
     prompt = f"""
 You are a helpful fruit expert chatbot.

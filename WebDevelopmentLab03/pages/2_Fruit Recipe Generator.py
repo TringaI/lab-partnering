@@ -6,7 +6,7 @@ import requests as r
 # import os
 # load_dotenv()
 
-key = st.secrets['key']
+key = st.secrets["key"]
 st.title("Fruit Recipe Generator")
 st.write("Choose 2 fruits and a style. We will generate a fun recipe for you!")
 
