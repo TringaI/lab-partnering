@@ -21,10 +21,10 @@ st.subheader("Biana Akpokabayen, Tringa Ibrahimi")
 st.write("""
 Welcome to our Streamlit Web Development Lab03 app! You can navigate between the pages using the sidebar to the left. The following pages are:
 
--  **Fruits Nutrition Analysis** - In this page you can get the nutritional value of choosen fruits. You can also get information about fruit families. In addition, you cans see which fruit are better for you based on your health conditino (if applicable).
--  **Phase 3** - Description Here
--  **Phase 4** - Description Here
-- 
+-  **Fruits Nutrition Analysis** - In this page you can get the nutritional value of choosen fruits. You can also get information about fruit families. In addition, you cans see which fruit are better for you based on your health condition (if applicable).
+-  *Fruit Recipe Generator** - In this page you can choose your two favorite fruits and a style and we will generate a fun recipe for you
+-  **Chatbot** - In this page you will be able to communicate with a chatbot and answer all of your food related questions
+
 
 """)
 
