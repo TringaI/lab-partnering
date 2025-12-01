@@ -2,9 +2,6 @@ import google.generativeai as genai
 import os
 import streamlit as st
 import requests as r
-# from dotenv import load_dotenv
-# import os
-# load_dotenv()
 
 key = st.secrets["key"]
 st.title("Fruit Recipe Generator")
@@ -47,6 +44,7 @@ if st.button("**Reveal Your Recipe**"):
 
         st.subheader("🍴Recipe Suggestion🍴")
         st.write(response.text)
+
 
 
 
