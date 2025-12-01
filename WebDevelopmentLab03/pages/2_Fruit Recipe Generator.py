@@ -4,12 +4,12 @@ import streamlit as st
 import requests as r
 
 st.title("Fruit Recipe Generator")
-st.write("Choose 2 fruits and a cuisine style. We will generate a fun recipe for you!")
+st.write("Choose 2 fruits and a style. We will generate a fun recipe for you!")
 
 fruit1 = st.text_input("Enter your first fruit:")
 fruit2 = st.text_input("Enter your second fruit:")
 
-cuisine = st.selectbox("Choose a cuisine/style:", ['Tropical', 'Italian', 'Dessert', 'Smoothie','Salad', 'Snack'])
+cuisine = st.selectbox("Choose a style:", ['Tropical', 'Italian', 'Dessert', 'Smoothie','Salad', 'Snack'])
 
 if st.button("**Reveal Your Recipe**"):
     fruit_data = []
@@ -39,4 +39,5 @@ if st.button("**Reveal Your Recipe**"):
 
         st.subheader("🍴Recipe Suggestion🍴")
         st.write(response.text)
+
 
