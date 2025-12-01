@@ -29,7 +29,7 @@ if st.button("**Reveal Your Recipe**"):
     fruit_names = ""
     if len(fruit_data) == 2 :
         for fruit in fruit_data:
-         fruit_names += fruit['name'] + ' '
+         fruit_names += fruit['name'] + ','
         prompt = f"""
             Create a {cuisine.lower()} style recipe using {fruit_names}.
             Include a fun recipe name, ingredients list, and short instructions.
@@ -39,5 +39,6 @@ if st.button("**Reveal Your Recipe**"):
 
         st.subheader("🍴Recipe Suggestion🍴")
         st.write(response.text)
+
 
 
